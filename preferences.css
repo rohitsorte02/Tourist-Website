@@ -1,0 +1,262 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    /* border: 1px solid gold; */
+    height: 100px;
+    width: 100%;
+    background-color: #FCF6F5;
+}
+
+.title img{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 70px;
+    width: 200px;
+    
+}
+
+.navbar{
+    margin-left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid gold; */
+    height: 100px;
+    width: 700px;
+}
+
+.info a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info a:hover{
+     color: #990011;
+}
+
+.info button{
+    border: 1px solid #990011;
+    /* color: #990011; */
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 20px;
+    font-weight: 500;
+    /* margin: 10px 2px; */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    background-color: #990011;
+}
+
+.info button:hover{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.mot{
+    position: relative;
+    /* border: 5px solid blue; */
+    height: 1100px;
+    width: 100%;
+}
+
+/* #scene h2{
+    position: absolute;
+    z-index: 4;
+    font-family: monospace;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-left: 350px;
+    margin-top: 150px;
+    color: yellow;
+    text-shadow: 2px 2px 2px #990011;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes blink {
+    0%{font-size: 45px; color: lime;}
+    25%{font-size: 40px; color: yellow;}
+    50%{font-size: 45px; color: lime;}
+    75%{font-size: 40px; color: yellow;}
+    100%{font-size: 45px; color: lime;}
+} */
+
+
+
+#road{
+    position: relative;
+    width: 100%;
+}
+
+#plane{
+    z-index: 3;
+    position: absolute;
+    left: 5px;
+    top: 650px;
+    height: 150px;
+    width: 500px;
+}
+
+#car{
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 580px;
+    height: 150px;
+    width: 300px;
+}
+
+#bus{
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    top: 500px;
+    height: 150px;
+    width: 350px;
+}
+
+#bus:hover{
+    transform: translateX(1000px);
+    transition: 5s;
+}
+
+#car:hover{
+    transform: translateX(1000px);
+    transition: 5s;
+}
+
+#plane:hover{
+
+    transition: 2s;
+
+    animation-name: aeroplane;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    /* animation-direction: reverse; */
+}
+
+@keyframes aeroplane {
+
+    /* 0%{transform: translateX(300px);} */
+    0%{transform: rotateZ(-20deg);}
+    100%{top: 0%; left: 100%;}
+    
+    /* 100%{transform: translateX(600px);} */
+    /* 30%{transform: rotateZ(-20deg);}
+    60%{transform: translateX(800px);}
+    100%{transform: rotatez(-20deg);} */
+    /* 100%{transform: translateY(-400px);} */
+    /* {transform: translateX(400px);} */
+}
+
+.option{
+    /* border: 2px solid red; */
+    width: 20%;
+    position: relative;
+    top: 20px;
+    /* display: flex; */
+    align-items: center;
+    margin: auto;
+}
+
+.option label{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.option button{
+    background-color: transparent;
+    border: 2px solid #990011;
+    color: white;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #990011;
+}
+
+.option button:hover{
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.food{
+    position: relative;
+    /* border: 5px solid blue; */
+    height: 1100px;
+    width: 100%;
+}
+
+#road1{
+    position: relative;
+    width: 100%;
+}
+
+#veg{
+    z-index: 2;
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    height: 400px;
+    width: 500px;
+}
+
+#paneer{
+    z-index: 1;
+    position: absolute;
+    left: 350px;
+    top: 500px;
+    height: 180px;
+    width: 180px;
+}
+
+#veg:hover + #paneer{
+     transform: translateY(-300px);
+     transition: 2s;
+}
+
+#nonveg{
+    z-index: 2;
+    position: absolute;
+    left: 800px;
+    top: 400px;
+    height: 400px;
+    width: 500px;
+}
+
+#chicken{
+    z-index: 1;
+    position: absolute;
+    left: 950px;
+    top: 500px;
+    height: 180px;
+    width: 180px;
+}
+
+#nonveg:hover + #chicken{
+    transform: translateY(-300px);
+    transition: 2s;
+}

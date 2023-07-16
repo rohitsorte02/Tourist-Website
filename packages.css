@@ -1,0 +1,853 @@
+*{
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 11;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #FCF6F5;
+    box-shadow: 2px 2px 4px gray;
+  }
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    /* border: 1px solid gold; */
+    height: 100px;
+    width: 100%;
+    background-color: #FCF6F5;
+}
+
+.title img{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 70px;
+    width: 200px;
+    
+}
+
+.navbar{
+    margin-left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid gold; */
+    height: 100px;
+    width: 700px;
+}
+
+.info a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info a:hover{
+     color: #990011;
+}
+
+.info button{
+    border: 1px solid #990011;
+    /* color: #990011; */
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 20px;
+    font-weight: 500;
+    /* margin: 10px 2px; */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    background-color: #990011;
+}
+
+.info button:hover{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.firstclass{
+    display: flex;
+}
+
+.packhead{
+    position: relative;
+    top: 50px;
+    left: 500px;
+    /* border: 1px solid red; */
+}
+
+.packhead h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.packages1{
+    /* border: 2px solid blue; */
+    position: relative;
+    margin-top: 100px;
+}
+
+.package1{
+    display: flex;
+    position: relative;
+    border: 5px solid black;
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+.package1 .stripe1{
+    /* display: flex; */
+    position: relative;
+    top: 30%;
+    left: 6%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(113, 110, 110);
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+.package1 .offer1{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from{transform: rotateY(0deg);}
+    from{transform: rotateY(360deg);}
+}
+
+.package1 .stripe2{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package1 .offer2{
+    position: relative;
+    top: 30%;
+    left: 19%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package1 .stripe3{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package1 .offer3{
+    position: relative;
+    top: 30%;
+    left: 29%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.options1{
+    position: relative;
+    top: 50px;
+    left: 400px;
+}
+
+#kashmir_summary{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#ladakh_summary{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+#mp_summary{
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#button1{
+    border: 1px solid #990011;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: crimson;
+}
+
+
+
+/* package 2 starts */
+
+.packages2{
+    /* border: 2px solid blue; */
+    position: relative;
+    margin-top: 200px;
+}
+
+.package2{
+    display: flex;
+    position: relative;
+    border: 5px solid black;
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+.package2 .stripe1{
+    /* display: flex; */
+    position: relative;
+    top: 30%;
+    left: 6%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(113, 110, 110);
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package2 .offer1{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package2 .stripe2{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package2 .offer2{
+    position: relative;
+    top: 30%;
+    left: 19%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package2 .stripe3{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package2 .offer3{
+    position: relative;
+    top: 30%;
+    left: 29%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.options2{
+    position: relative;
+    top: 50px;
+    left: 400px;
+}
+
+#hp_summary{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#delhi_summary{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+#goa_summary{
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#button2{
+    border: 1px solid #990011;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: crimson;
+}
+
+/* package 2 ends */
+
+
+
+/* package 3 starts */
+
+.packages3{
+    /* border: 2px solid blue; */
+    position: relative;
+    margin-top: 200px;
+}
+
+.package3{
+    display: flex;
+    position: relative;
+    border: 5px solid black;
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+.package3 .stripe1{
+    /* display: flex; */
+    position: relative;
+    top: 30%;
+    left: 6%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(113, 110, 110);
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package3 .offer1{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package3 .stripe2{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package3 .offer2{
+    position: relative;
+    top: 30%;
+    left: 19%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package3 .stripe3{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package3 .offer3{
+    position: relative;
+    top: 30%;
+    left: 29%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.options3{
+    position: relative;
+    top: 50px;
+    left: 400px;
+}
+
+#uk_summary{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#kerala_summary{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+#rajasthan_summary{
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#button3{
+    border: 1px solid #990011;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: crimson;
+}
+
+/* package 3 ends */
+
+
+/* package 4 starts */
+
+.packages4{
+    /* border: 2px solid blue; */
+    position: relative;
+    margin-top: 200px;
+}
+
+.package4{
+    display: flex;
+    position: relative;
+    border: 5px solid black;
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+.package4 .stripe1{
+    /* display: flex; */
+    position: relative;
+    top: 30%;
+    left: 6%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(113, 110, 110);
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package4 .offer1{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package4 .stripe2{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package4 .offer2{
+    position: relative;
+    top: 30%;
+    left: 19%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.package4 .stripe3{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.package4 .offer3{
+    position: relative;
+    top: 30%;
+    left: 29%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 100%;
+    background-color: #990011;
+    color: #FCF6F5;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.options4{
+    position: relative;
+    top: 50px;
+    left: 400px;
+}
+
+#kokan_summary{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#mumbai_summary{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+#pc_summary{
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Mulish', sans-serif;
+    color: #990011;
+}
+
+
+#button4{
+    border: 1px solid #990011;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: crimson;
+}
+
+/* package 4 ends */
+
+
+
+footer{
+    position: relative;
+    top: 150px;
+    border-top: 2px solid #990011;
+}
+
+.footer-container{
+    display: flex;
+    padding: 20px;
+    /* border: 1px solid red; */
+    /* width: 80%; */
+    /* height: 500px; */
+    background-color: #990011;
+}
+
+.box{
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background-color: #990011;
+    align-items: center;
+}
+
+.box h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fcf6f5;
+    background-color: transparent;
+    text-align: center;
+}
+
+.box a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fcf6f5;
+    background-color: transparent;
+    text-align: left;
+}
+
+.box a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #fcf6f5;
+    color: #fcf6f5;
+    background-color: transparent;
+    text-align: center;
+}
+
+.box p{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fcf6f5;
+    background-color: transparent;
+    text-align: center;
+}
+
+footer p{
+    color: #fcf6f5;
+    background-color: #990011;
+    text-align: center;
+}
